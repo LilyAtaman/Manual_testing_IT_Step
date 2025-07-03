@@ -1,0 +1,94 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+ 
+test1 = webdriver.Chrome()
+test1.get('https://exe.ua')
+
+
+title = test1.find_element(By.XPATH,'//*[@id="search_query"]')
+
+items = ["Монітор","Чохол","Мишка","Телевізор","Мобільний телефон","Жорсткі диски","Оперативна пам'ять","Планшети","Процесори","Блоки"]
+time.sleep(2)
+print("Test started..........")
+
+for elem in items:
+    try:
+        time.sleep(0.5)
+        search = test1.find_element(By.XPATH,'//*[@id="search_query"]')
+        search.clear()
+        search.send_keys(elem)
+        search.send_keys(Keys.ENTER)
+    except Exception as e :
+        print("Error")
+ 
+
+test1.quit()
+print("test 1 - finished")
+
+-------------------------------------------------------------------------------------
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+ 
+test1 = webdriver.Chrome()
+test1.get('https://avrora.ua/supercina/?utm_source=google&utm_medium=cpc&utm_campaign=Ukr-Search-Brand-Avrora&utm_content=gid_164879922917_g_c_1012850&utm_term=аврора_b__kwd-852797782&gad_source=1&gad_campaignid=21477197474&gbraid=0AAAAAqmCixOtArzgi-MQ6KoEW_gSeZCMj&gclid=Cj0KCQjw1JjDBhDjARIsABlM2St83Rcs6GajBcQirXHSMcPnMfLtqSclpuQyamwJRlG8hwqpQ3l3rP8aAlhTEALw_wcB')
+
+
+title = test1.find_element(By.XPATH,'//*[@id="search_input"]')
+
+items = ["Чашка","Чохол","Мило","Шампунь","Папір","Кондиціонер","Серветки","Гель","Рушники","Чарка"]
+time.sleep(2)
+print("Test started..........")
+
+for elem in items:
+    try:
+        time.sleep(0.5)
+        search = test1.find_element(By.XPATH,'//*[@id="search_input"]')
+        search.clear()
+        search.send_keys(elem)
+        search.send_keys(Keys.ENTER)
+    except Exception as e :
+        print("Error")
+ 
+
+test1.quit()
+print("test 1 - finished")
+
+
+--------------------------------------------------------------------------------------
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+ 
+test1 = webdriver.Chrome()
+test1.get('https://allo.ua/?srsltid=AfmBOorKGIyjMkAZ7XNFkPv_-G-9ebXZkpqTEfh5jyw4spxAq_MjO5u3')
+
+
+title = test1.find_element(By.XPATH,'//*[@id="search-form__input"]')
+
+items = ["Інструменти","Футболка","Годинник","Холодильник","Планшети","Мобільні телефони","Конструктор","Телевізор","Рюкзаки","Чехол"]
+time.sleep(3)
+print("Test started..........")
+
+for elem in items:
+    try:
+        time.sleep(0.8)
+        search = test1.find_element(By.XPATH,'//*[@id="search-form__input"]')
+        search.clear()
+        search.send_keys(elem)
+        search.send_keys(Keys.ENTER)
+    except Exception as e :
+        print("Error")
+ 
+
+test1.quit()
+print("test 1 - finished")
+ 
+
+
+
+
