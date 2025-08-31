@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Проста HTML-сторінка</title>
+    <style>
+        /* Стилі для видимого фокусу */
+        button:focus,
+        a:focus,
+        input:focus {
+            outline: 2px solid #007BFF;
+            outline-offset: 2px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 5px;
+            width: 200px;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+-</h1>
+
+    <!-- Кнопка -->
+    <button type="button">Натисни мене</button>
+
+    <!-- Посилання -->
+    <p>
+        <a href="https://avrora.ua/" target="_blank">Перейти на сайт Аврора</a>
+    </p>
+
+    <!-- Форма -->
+    <form action="#" method="post">
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Відправити</button>
+    </form>
+
+    <!-- Зображення з alt -->
+    <img src="https://images.avrora.ua/images/thumbnails/586/461/detailed/22/75984_001.webp" alt="Приклад зображення">
+
+</body>
+</html>
